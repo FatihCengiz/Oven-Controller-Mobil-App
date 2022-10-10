@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".operation.TransationPage">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.viewpager.widget.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="top"
+        android:gravity="right"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="50dp"
+
+        android:layout_marginLeft="-790dp">
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+
+            android:src="@drawable/modemenu_aktif_1"/>
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/solusticon_op"/>
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="65dp"
+            android:src="@drawable/solusticon_yop"/>
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/solusticon_lamp"/>
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="80dp"
+            android:src="@drawable/solusticon_eco"/>
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/solusticon_bluetooth"/>
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/solusticon_eng"/>
+
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textClock"
+            android:format12Hour="hh:mm"
+            android:format24Hour="@null"
+            android:layout_marginRight="10dp"
+            android:textSize="40dp"
+            android:timeZone="Turkey"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="NextPage"
+        android:id="@+id/page3"
+        android:visibility="invisible"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="-780dp"
+        android:onClick="nextPage1"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/page4"
+        android:visibility="invisible"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="-180dp"
+        android:text="PreviousPage"
+        android:onClick="nextPage2"
+        />
+
+
+</LinearLayout>

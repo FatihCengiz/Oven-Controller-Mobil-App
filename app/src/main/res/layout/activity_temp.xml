@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#CACFD2"
+    tools:context=".MainActivity">
+    <com.jaydeep.blesample.Slider.CircularSeekBar
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:id="@+id/seekBar"
+        app:arc_max="100"
+        app:arc_open_angle="90"
+        app:arc_progress="0"
+        app:arc_rotate_angle="270"
+        app:arc_thumb_color="#fff"
+        app:arc_thumb_mode="STROKE"
+        app:arc_thumb_radius="16dp"
+        app:arc_thumb_width="3dp"
+        app:arc_width="40dp"
+        app:arc_colors="@array/arc_colors_default"/>
+
+    <TextView android:id="@+id/txtProgress"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:text="0"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

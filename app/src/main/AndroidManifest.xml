@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jaydeep.blesample">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".operation.TimerPages.TimerMenuActivity"
+            android:screenOrientation="landscape"
+            android:exported="true" >
+
+
+
+        </activity>
+        <activity
+            android:name=".operation.TransitionPageFav"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Slider.TempActivity"
+            android:exported="true" />
+        <activity
+            android:name=".operation.TransationPage"
+            android:exported="true"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".operation.OperationActivity" />
+    </application>
+
+</manifest>

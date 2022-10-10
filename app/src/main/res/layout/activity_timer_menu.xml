@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/tempLayout"
+    android:orientation="vertical"
+    android:background="@drawable/timer_orj"
+    tools:context=".operation.TimerPages.TimerMenuActivity">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/anamenu_pasif_2" />
+
+        <Button
+            android:id="@+id/btnTemp"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/anamenu_1" />
+
+        <Button
+            android:id="@+id/btnFav"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/anamenu_pasif_4" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

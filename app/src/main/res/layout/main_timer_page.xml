@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timer"
+    android:id="@+id/timerLayout"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="70dp"
+        android:visibility="invisible">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/frame_layoutTimer">
+
+    </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/seekArcContainer"
+            android:layout_width="281dp"
+            android:layout_height="350dp"
+            android:layout_marginLeft="50dp"
+        >
+
+            <com.jaydeep.blesample.Slider.SeekArc
+                android:id="@+id/seekArc"
+                android:layout_width="330dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center"
+                android:padding="60dp"
+                app:arcColor="@color/white"
+                app:arcWidth="20dp"
+                app:clockwise="true"
+                app:max="100"
+                app:progressColor="@color/white"
+                app:progressWidth="19dp"
+                app:startAngle="0"
+                app:touchInside="true" />
+
+            <TextView
+                android:id="@+id/seekArcProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#EFE2E9"
+                android:textSize="75sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/anamenu_pasif_3" />
+
+        <Button
+            android:id="@+id/btnTemp"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/anamenu_2" />
+
+        <Button
+            android:id="@+id/btnFav"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/anamenu_pasif_4" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/tempLayout"
+    android:orientation="vertical"
+    android:background="@drawable/temp2"
+ >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="520dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/derece" />
+
+
+    <com.jaydeep.blesample.Slider.CircularSeekBar
+
+        android:id="@+id/seekBar"
+        android:layout_width="600dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="-288dp"
+        android:layout_marginBottom="40dp"
+        android:padding="10dp"
+        app:arc_colors="@array/arc_colors_default"
+        app:arc_max="30"
+
+        app:arc_open_angle="90"
+        app:arc_progress="0"
+        app:arc_rotate_angle="270"
+        app:arc_thumb_color="#fff"
+        app:arc_thumb_mode="STROKE"
+        app:arc_thumb_radius="16dp"
+        app:arc_thumb_width="3dp"
+        app:arc_width="11dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="-180dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_marginBottom="-20dp"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/p2" />
+
+        <Button
+            android:id="@+id/btnTemp"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/a1" />
+
+        <Button
+            android:id="@+id/btnFav"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/p4" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings"
+    android:id="@+id/settingsLayout"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="70dp"
+        android:visibility="invisible">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/frame_layoutSettings">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/settingsState"
+                android:layout_width="250dp"
+                android:text="Settings"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="60sp"
+                android:background="@drawable/text"
+                android:textColor="@color/white"
+                android:layout_height="100dp"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/anamenu_pasif_3" />
+
+        <Button
+            android:id="@+id/btnTemp"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/anamenu_2" />
+
+        <Button
+            android:id="@+id/btnFav"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/anamenu_pasif_4" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
